@@ -1,0 +1,152 @@
+:root{
+ --default-color:#EA2035;
+}
+
+body{
+ background-color: #FFEDF1;
+}
+
+header{
+ margin-bottom: 50px;
+}
+
+.navbar{
+ position: fixed;
+ top: 0;
+ width: 100%;
+ z-index: 1;
+}
+
+.navbar-toggler{
+ background-color: var(--default-color);
+}
+
+main{
+ position: relative;
+ margin: 0 auto;
+ width:auto;
+ height: 170px;
+ background:no-repeat center/90% url("./src/vegetables-set-to-the-left-of-black-slate.jpg");
+}
+
+.main-paragraph{
+ display: none;
+}
+
+
+h1{
+ position: absolute;
+ top: 45px;
+ left:calc(25% - 40px);
+ color:white;
+ font-family: 'Homemade Apple', cursive;
+ line-height: 150%;
+}
+
+#recipe-container{
+  padding-top: 80px;
+  margin-bottom: 40px;
+}
+
+h2{
+ font-size: 1.2rem;
+ text-align: center;
+ font-family: 'Poppins',
+ sans-serif; ;
+}
+
+i{
+ color:var(--default-color);
+}
+
+.subscribe-container{
+   margin: 20px auto;
+   width: auto;
+   height: 150px;
+   background: no-repeat center/100% url("./src/empty-wooden-table-and-cloth-red-napkin.jpg");
+}
+
+label{
+ display:block;
+ padding-top: 20px;
+ padding-left: 5px;
+ font-size: 1.3rem;
+ font-weight: bolder;
+ color: rgb(255, 253, 253);
+}
+
+input{
+ display:block;
+ margin: 5px 0;
+ margin-left: 5px;
+}
+
+.btn-danger{
+ margin-left: 5px;
+}
+
+footer{
+
+ text-align: center;
+}
+
+@media(min-width: 598px){
+
+ main{
+  height:300px;
+ }
+
+ .main-paragraph{
+  position:absolute;
+  display: block;
+  width:50%;
+  top:150px;
+  left: calc(12% - 20px);
+  color:whitesmoke;
+  font-size: 1.5rem;
+  font-family: 'Poppins',sans-serif;
+
+ }
+
+ h1{
+  left: calc(10% - 20px);
+  font-size: 3.2rem;
+ }
+
+ br{
+  display:none
+ }
+
+ h2{
+  font-size: 1.6rem;
+ }
+
+ .subscribe-container {
+  position:relative;
+   height: 240px;
+   background: no-repeat center/100% url("./src/9166.jpg");
+   box-sizing: border-box;
+  }
+
+  label{
+   position: absolute;
+   top: calc(30% - 40px);
+   left: calc(20% - 80px);
+   color:black;
+   font-size: 1.6rem;
+  }
+
+  input {
+   position: absolute;
+   display: block;
+   top: calc(60% - 40px);
+   left: calc(25% - 120px);
+  }
+
+  .btn-danger {
+  position: absolute;
+  bottom: calc(25% - 20px);
+  left:calc(25% - 120px);
+ }
+
+}
