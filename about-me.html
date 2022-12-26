@@ -67,7 +67,7 @@
 			main {
 				box-sizing: border-box;
 				margin: 80px auto;
-				max-width: 80%;
+				width: 80%;
 				height: 600px;
 				background-color: #c846536a;
 				border: 1px solid whitesmoke;
@@ -123,7 +123,7 @@
 
 			.fa-brands {
 				font-size: 25px;
-				color: whitesmoke;
+				color: rgb(65, 64, 64);
         border-radius: 30%;
 			}
 
@@ -160,6 +160,27 @@
         margin: 0;
 				color: whitesmoke;
 			}
+
+      @media(min-width: 598px){
+        main{
+          width: 500px;
+          height: 650px;
+        }
+
+        .fa-brands{
+          margin-right: 20px;
+        }
+
+        .links p{
+          display:block;
+          font-size: 1.4rem;
+          color: var(--default-letter-color)
+        }
+
+        .contact-btn {
+          font-size: 2rem;
+        }
+      }
 
 		</style>
 	</head>
@@ -229,7 +250,7 @@
 				</div>
 				<div class="links twitter">
 					<i class="fa-brands fa-github"></i>
-					<p>/Natsumychan</p>
+					<p>Natsumychan</p>
 				</div>
 			</div>
 			<button class="contact-btn">CONTACT</button>
