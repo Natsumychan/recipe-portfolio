@@ -54,7 +54,7 @@
 							<a
 								class="nav-link active"
 								aria-current="page"
-								href="/"
+								href="#"
 								>Home</a
 							>
 							<a
@@ -67,6 +67,11 @@
 								href="#subs-cont"
 								>Suscribe!</a
 							>
+							<a
+								class="nav-link"
+								href="/about-me.html"
+								>Contact
+							</a>
 						</div>
 					</div>
 				</div>
@@ -109,12 +114,27 @@
   <section  id="subs-cont"class="subscribe-container">
    <label for="mail">Get new ideas by email</label>
    <input  id="mail" type="email" placeholder="insert your email">
-   <button class="btn btn-danger">Suscribe me!</button>
+   <button class="btn btn-danger" id="suscribe-button">Suscribe!</button>
   </section>
 		<footer>
    <p>
     Open source by Diana Castaño
    </p>
   </footer>
+		<script>
+			const userEmail= document.querySelector("#mail")
+			const suscribeButton= document.querySelector("#suscribe-button")
+			
+			suscribeButton.addEventListener("pointerdown", suscribingUser )
+
+			function suscribingUser(){
+				let userEmailInfo= userEmail.value
+				if(userEmailInfo.length> 0){
+					return alert("Thank you for suscribe and happy Holydays 🎄! ")
+				}else{
+					return alert("Please insert your email 🥶!")
+				}
+			}
+		</script>
 	</body>
 </html>
